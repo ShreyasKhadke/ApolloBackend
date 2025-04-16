@@ -6,14 +6,10 @@ import json
 import time
 import random
 import string
-import os
-import csv
-import pymongo
-from itertools import product
+import sys
 from django.utils import timezone
-from datetime import datetime
 from django.conf import settings
-from .combinations_generator import get_completed_combinations, generate_combinations, update_combination_status
+from .combinations_generator import generate_combinations, update_combination_status
 
 def generate_random_string(length):
     """Generate a random string of fixed length"""
